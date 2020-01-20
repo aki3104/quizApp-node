@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="/public/third_party/bootstrap/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- コードから渡されたデータを表示-->
+      <div>問題：　<%= quiz.question %></div>
+      <div id = category>ジャンル：　<%= quiz.category%></div>
+      <div id = difficulty>難易度：　<%= quiz.difficulty %></div>
+      <!-- <div id = displayquiz>以下のボタンをクリック</div>
+      <button id = start>開始</button> -->
+      <%- include("./displayAnswers.ejs", answers) %>
+    </div>
+  </body>
+</html>
